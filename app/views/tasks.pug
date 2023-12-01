@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    div
+      a(href="/") Home
+      a(href="/")    Profile
+      a(href="/")    Settings
+    table(border="1")
+      thead
+        tr
+          each key in Object.keys(results[0])
+            th= key
+      tbody
+        each row in results
+          tr
+            each val in row
+              td= val
