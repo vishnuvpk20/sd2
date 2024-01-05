@@ -1,0 +1,37 @@
+html
+  head
+    title Add Task
+  body
+    h1 Add Task
+    form(action='/addTask', method='post')
+      label(for='task_name') Task Name:
+      input(type='text', name='task_name', required)
+      br
+      label(for='task_start_date') Task Start Date:
+      input(type='text', name='task_start_date', required)
+      br
+      label(for='user_id') User ID:
+      input(type='text', name='user_id', required)
+      br
+      label(for='monday') Monday:
+      input(type='text', name='monday', required)
+      br
+      label(for='tuesday') Tuesday:
+      input(type='text', name='tuesday', required)
+      br
+      label(for='wednesday') Wednesday:
+      input(type='text', name='wednesday', required)
+      br
+      label(for='thursday') Thursday:
+      input(type='text', name='thursday', required)
+      br
+      label(for='friday') Friday:
+      input(type='text', name='friday', required)
+      br
+      label(for='saturday') Saturday:
+      input(type='text', name='saturday', required)
+      br
+      label(for='sunday') Sunday:
+      input(type='text', name='sunday', required)
+      br
+      button(type='submit') Add Task

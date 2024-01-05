@@ -1,0 +1,7 @@
+html
+  head
+    title Results
+  body
+    h1 Results for #{username}
+    each row in data
+      p= JSON.stringify(row)

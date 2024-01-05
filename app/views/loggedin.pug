@@ -1,0 +1,9 @@
+html
+  head
+    title Logged In
+  body
+    h1 Welcome, #{username}!
+    h2 Your Tasks
+    ul
+      each task in tasks
+        li= task.task_name
